@@ -7,7 +7,7 @@ public class Solution {
         {
             seen.Add(nums[i]);
         }
-        int n2 = seen.Count();
+        int n2 = seen.Count;
         if(n1 != n2)
         {
             return true;
