@@ -4,12 +4,11 @@ public class Solution {
         HashSet<int> seen = new HashSet<int>();
         for(int i=0; i<n1; i++)
         {
+            if(seen.Contains(nums[i]))
+            {
+                return true;
+            }
             seen.Add(nums[i]);
-        }
-        int n2=seen.Count;
-        if(n1!=n2)
-        {
-            return true;
         }
         return false;
     }
