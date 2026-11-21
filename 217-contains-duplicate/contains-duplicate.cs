@@ -6,14 +6,11 @@ public class Solution {
 
         foreach (int num in nums)
         {
-            if (seen.Contains(num))
-            {
+            if (!seen.Add(num))
                 return true;
-            }
-
-            seen.Add(num);
         }
 
         return false;
     }
 }
+
